@@ -5,6 +5,7 @@ const router = jsonServer.router("./db.json");
 const middlewares = jsonServer.defaults({ noCors: true });
 const jwt = require("jsonwebtoken");
 const { nanoid } = require("nanoid");
+const cors = require("cors");
 
 server.use(
   cors({
