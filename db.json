@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "xSYKwTB",
+      "name": "Muhammad Rahmahalim",
+      "username": "oxwazz",
+      "password": "123123123",
+      "email": "oxwazz@twitter.com",
+      "phone": "082131435255"
+    },
+    {
+      "id": "MSIwAcN",
+      "name": "Fatkhur Rosyad",
+      "username": "rosyad",
+      "password": "234234234",
+      "email": "rosyad@twitter.com",
+      "phone": "082131435266"
+    }
+  ],
+  "tweets": [
+    {
+      "id": 1,
+      "text": "Makan dulu gess..",
+      "image": "https://via.placeholder.com/150",
+      "userId": "xSYKwTB"
+    },
+    {
+      "id": 2,
+      "text": "Gi ap?",
+      "image": "https://via.placeholder.com/150",
+      "userId": "MSIwAcN"
+    },
+    {
+      "id": 3,
+      "text": "just a normal day",
+      "image": "https://via.placeholder.com/150",
+      "userId": "xSYKwTB"
+    },
+    {
+      "id": 4,
+      "text": "happy :)",
+      "image": "https://via.placeholder.com/150",
+      "userId": "MSIwAcN"
+    }
+  ]
+}
