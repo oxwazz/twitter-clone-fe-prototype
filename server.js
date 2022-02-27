@@ -6,6 +6,16 @@ const middlewares = jsonServer.defaults({ noCors: true });
 const jwt = require("jsonwebtoken");
 const { nanoid } = require("nanoid");
 
+server.use(
+  cors({
+    origin: true,
+    credentials: true,
+    preflightContinue: false,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  })
+);
+server.options("*", cors());
+
 server.db = router.db;
 
 // Create a token from a payload
