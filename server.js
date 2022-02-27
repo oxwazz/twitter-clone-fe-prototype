@@ -155,6 +155,9 @@ server.use(/^(?!\/api\/v1\/auth).*$/, async (req, res, next) => {
 
     req.userAuth = data;
 
+    // add filter resource only show if relation to user
+    req.query = { ...req.query, userId: data.id };
+
     next();
   } catch (error) {
     return res.status(401).json({
@@ -217,29 +220,8 @@ server.use(/^(?!\/api\/v1\/auth).*$/, async (req, res, next) => {
   next();
 });
 
-// filter resource only show if relation to user
+// custom response
 router.render = (req, res) => {
-  if (req.originalUrl.includes("tweets")) {
-    const isArray = Array.isArray(res.locals.data);
-    if (isArray) {
-      const filterDataRelationToUser = res.locals.data.filter(
-        (v) => v.userId === req.userAuth.id
-      );
-      return res.jsonp({
-        success: true,
-        message: "success",
-        data: filterDataRelationToUser,
-      });
-    }
-
-    const hasRelationToUser = res.locals.data.userId === req.userAuth.id;
-    return res.jsonp({
-      success: true,
-      message: "success",
-      data: hasRelationToUser ? res.locals.data : {},
-    });
-  }
-
   return res.jsonp({
     success: true,
     message: "success",
