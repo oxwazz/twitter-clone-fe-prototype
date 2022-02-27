@@ -9,6 +9,10 @@
     "nanoid": "^3.3.1",
     "nodemon": "^2.0.15"
   },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "dev": "nodemon ./server.js"
   },
