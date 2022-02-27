@@ -80,17 +80,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"BETwitterCloneFAKE@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "BETwitterCloneFAKE@workspace:."
-  dependencies:
-    json-server: ^0.17.0
-    jsonwebtoken: ^8.5.1
-    nanoid: ^3.3.1
-    nodemon: ^2.0.15
-  languageName: unknown
-  linkType: soft
-
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -212,6 +201,17 @@ __metadata:
   checksum: 3419b805d5dfc518f3a05dcf42aa53aa9ce820e50b6df5097f9e186322e1bc733c36722b624802cd37e791035aa73b828ed814d8362333d42d7f5cd04d7a5e48
   languageName: node
   linkType: hard
+
+"be-twitter-clone-prototype@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "be-twitter-clone-prototype@workspace:."
+  dependencies:
+    json-server: ^0.17.0
+    jsonwebtoken: ^8.5.1
+    nanoid: ^3.3.1
+    nodemon: ^2.0.15
+  languageName: unknown
+  linkType: soft
 
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
